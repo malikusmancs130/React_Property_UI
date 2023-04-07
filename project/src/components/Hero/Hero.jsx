@@ -9,12 +9,12 @@ const Hero = () => {
             <div className="paddings innerWidth flexCenter hero-container">
                 <div className="flexColStart hero-left">
                     <div className="hero-title">
-                        <div className="orange-circle" />
+                        <div className="orange-circle"></div>
                         <h1>
                             Discover <br />
                             Most Suitable <br />
-                            Property
-                        </h1>
+                            Property <br />
+                        </h1> 
                     </div>
                     <div className="flexColStart hero-description">
                         <span className='secondaryText'>Find a variety of properties that suit you very easilty</span>

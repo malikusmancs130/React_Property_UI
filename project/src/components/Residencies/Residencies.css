@@ -30,6 +30,10 @@
     font-size: 0.7rem;
     width: 15rem;
 }
+.r-card>:nth-child(4) {
+    font-size: 0.7rem;
+    width: 15rem;
+}
 
 .r-card:hover {
     scale: 1.025;
@@ -45,7 +49,6 @@
 }
 
 .r-buttons {
-    position: absolute;
     gap: 1rem;
     top: -4rem;
     right: 0;
@@ -53,9 +56,9 @@
 
 .r-buttons button {
     font-size: 1.2rem;
-    padding: o.2rem 0.8rem;
-    color: blue;
-    border: none;
+    padding: 0.2rem 0.8rem;
+    color: red;
+    border:rgba(136, 160, 255, 0.46);
     border-radius: 5px;
     background-color:white;
     cursor: pointer;
