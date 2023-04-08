@@ -2,6 +2,7 @@ import React from 'react';
 import "./Hero.css"
 import { HiLocationMarker } from 'react-icons/hi'
 import CountUp from 'react-countup'
+import { motion, spring } from 'framer-motion';
 
 const Hero = () => {
     return (
@@ -9,12 +10,21 @@ const Hero = () => {
             <div className="paddings innerWidth flexCenter hero-container">
                 <div className="flexColStart hero-left">
                     <div className="hero-title">
-                        <div className="orange-circle"></div>
-                        <h1>
-                            Discover <br />
-                            Most Suitable <br />
-                            Property <br />
-                        </h1> 
+                        {/* <div className="orange-circle"></div> */}
+                        <motion.h1
+                            initial={{ y: "2rem", opacity: 0 }}
+                            animate={{ y: 0, opacity: 1 }}
+                            transition={{
+                                duration: 2,
+                                type: spring
+                            }}
+                        >
+                            <h1>
+                                Discover <br />
+                                Most Suitable <br />
+                                Property <br />
+                            </h1>
+                        </motion.h1>
                     </div>
                     <div className="flexColStart hero-description">
                         <span className='secondaryText'>Find a variety of properties that suit you very easilty</span>
@@ -62,11 +72,18 @@ const Hero = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flexColStart hero-right">
+                <motion.div
+                    initial={{ x: "7rem", opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    transition={{
+                        duration: 2,
+                        type: spring
+                    }}
+                    className="flexColStart hero-right">
                     <div className="image-container">
                         <img src="./hero-image.png" alt="" />
                     </div>
-                </div>
+                </motion.div>
             </div>
         </section>
     )

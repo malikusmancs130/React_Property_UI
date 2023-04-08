@@ -49,3 +49,16 @@ v.container .image-container {
     border-radius: 6px;
     background: wheat;
 }
+
+@media (max-width : 1024px)  {
+    .v-container{
+        flex-direction: column;
+    }
+
+    @media (max-width:768px) {
+        .accordtionButton .primaryText {
+            font-size: 0.8rem;
+        }
+        
+    }
+}

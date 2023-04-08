@@ -13,3 +13,13 @@
     font-weight: 500;
     cursor: pointer;
 }
+
+@media (max-width:768px) {
+    .f-container{
+        justify-content: center;
+    }
+    .f-container>div {
+        align-items: center !important;
+        text-align: center;
+    }
+}
